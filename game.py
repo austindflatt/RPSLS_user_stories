@@ -126,9 +126,4 @@ def single_player():
         print('please choose a correct play')
 
 
-
-
-
-
-
-
+def multi_player():
