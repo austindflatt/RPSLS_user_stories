@@ -127,3 +127,75 @@ def single_player():
 
 
 def multi_player():
+    person_player.move = input(f"{person_player.name}, please type a move")
+    person_player2.move = input(f"{person_player2}, please type a move")
+
+    # Rock move
+    if person_player2.move == Player.choice[0] and person_player.move == Player.choice[
+        2] or person_player2.move == Player.choice[0] and person_player.move == Player.choice[3]:
+        person_player2.win_count += 1
+        print(f'{person_player2.name} wins this round')
+    elif person_player2.move == Player.choice[0] and person_player.move == Player.choice[
+        1] or person_player2.move == Player.choice[0] and person_player.move == Player.choice[4]:
+        person_player.win_count += 1
+        print(f'{person_player.name} wins this round.')
+    elif person_player2.move == Player.choice[0] and person_player.move == Player.choice[0]:
+        print(f'its a tie')
+
+    # Paper
+    elif person_player2.move == Player.choice[1] and person_player.move == Player.choice[
+        0] or person_player2.move == Player.choice[1] and person_player.move == Player.choice[4]:
+        person_player2.win_count += 1
+        print(f'{person_player2.name} wins this round')
+    elif person_player2.move == Player.choice[1] and person_player.move == Player.choice[
+        3] or person_player2.move == Player.choice[1] and person_player.move == Player.choice[2]:
+        person_player.win_count += 1
+        print(f'{person_player.name} wins this round.')
+    elif person_player2.move == Player.choice[1] and person_player.move == Player.choice[1]:
+        print(f'its a tie')
+
+    # Scissors
+    elif person_player2.move == Player.choice[2] and person_player.move == Player.choice[
+        1] or person_player2.move == Player.choice[2] and person_player.move == Player.choice[3]:
+        person_player2.win_count += 1
+        print(f'{person_player2.name} wins this round')
+    elif person_player2.move == Player.choice[2] and person_player.move == Player.choice[
+        4] or person_player2.move == Player.choice[2] and person_player.move == Player.choice[0]:
+        person_player.win_count += 1
+        print(f'{person_player.name} wins this round')
+    elif person_player2.move == Player.choice[2] and person_player.move == Player.choice[2]:
+        print(f'its a tie')
+
+    # Lizard
+    elif person_player2.move == Player.choice[3] and person_player.move == Player.choice[
+        1] or person_player2.move == Player.choice[3] and person_player.move == Player.choice[4]:
+        person_player2.win_count += 1
+        print(f'{person_player2.name} wins this round')
+    elif person_player2.move == Player.choice[3] and person_player.move == Player.choice[
+        0] or person_player2.move == Player.choice[3] and person_player.move == Player.choice[2]:
+        person_player.win_count += 1
+        print(f'{person_player.name} wins this round.')
+    elif computer_player.move == Player.choice[3] and person_player.move == Player.choice[3]:
+        print(f'its a tie')
+
+    # Spock
+    elif person_player2.move == Player.choice[4] and person_player.move == Player.choice[
+        0] or person_player2.move == Player.choice[4] and person_player.move == Player.choice[2]:
+        person_player2.win_count += 1
+        print(f'{person_player2.name} wins this round')
+    elif person_player2.move == Player.choice[4] and person_player.move == Player.choice[
+        1] or person_player2.move == Player.choice[4] and person_player.move == Player.choice[3]:
+        person_player.win_count += 1
+        print(f'{person_player.name} wins this round.')
+    elif person_player2.move == Player.choice[4] and person_player.move == Player.choice[4]:
+        print(f'its a tie')
+    else:
+        print('please choose a correct play')
+
+def intro():
+    print('Welcome to RPSLS')
+
+def start_game():
+    intro()
+    rules()
+    game_option()

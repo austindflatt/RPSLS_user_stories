@@ -4,4 +4,4 @@ from computer import Computer
 
 
 if __name__ == '__main__':
-    pass
+    game.start_game()
