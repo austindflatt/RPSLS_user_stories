@@ -32,16 +32,16 @@ def play_multi():
 
 
 def rules():
-    print(' *RULES*'
-          'Rock crush Scissors'
-          'Rock crushes Lizard'
-          'Paper covers Rock'
-          'Lizard poisons Spock'
-          'Spock smashes Scissors'
-          'Scissors decapitates Lizard'
-          'Lizard eats Paper'
-          'Paper disproves Spock'
-          'Spock vaporizes Rock')
+    print('*RULES*')
+    print('scissors cuts paper')
+    print('paper covers rock')
+    print('rock crushes lizard')
+    print('lizard poisons spock')
+    print('spock smashes scissors')
+    print('scissors decapitates lizard')
+    print('lizard eats paper')
+    print('paper disproves spock')
+    print('spock vaporizes rock')
 
 
 def game_option():
