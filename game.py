@@ -4,7 +4,7 @@ import random
 
 
 person_player = Player()
-print('Enter second player name')
+print('Enter second player name, if no second player press enter')
 person_player2 = Player()
 computer_player = Computer()
 
