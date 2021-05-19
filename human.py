@@ -1,5 +1,5 @@
-from player import Player
-
-class Human(Player):
+class Human:
     def __init__(self):
-        pass
+        self.name = ''
+        self.move = ''
+        self.win_count = int()
