@@ -128,7 +128,7 @@ def single_player():
 
 def multi_player():
     person_player.move = input(f"{person_player.name}, please type a move")
-    person_player2.move = input(f"{person_player2}, please type a move")
+    person_player2.move = input(f"{person_player2.name}, please type a move")
 
     # Rock move
     if person_player2.move == Player.choice[0] and person_player.move == Player.choice[
