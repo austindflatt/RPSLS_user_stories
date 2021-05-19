@@ -1,5 +1,4 @@
 import game
-from human import Human
 from player import Player
 from computer import Computer
 

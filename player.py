@@ -5,4 +5,4 @@ class Player(Human):
         super().__init__()
         self.name = input('Enter name')
         self.move = ''
-        user_choice = ['rock', 'paper', 'scissors', 'lizard', 'spock']
+    choice = ['rock', 'paper', 'scissors', 'lizard', 'spock']
